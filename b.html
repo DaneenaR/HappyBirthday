@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Surprise</title>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="b.css" />
+</head>
+<body>
+  
+  <div id="page0" class="page envelope-page">
+  <div class="envelope" onclick="openEnvelope()">
+    <div class="flap"></div>
+    <div class="letter">💌</div>
+  </div>
+</div>
+
+
+  <!-- Page 1 -->
+  <div id="page1" class="page" style="display: flex;">
+    <h1>🎉A little Surprise🎉</h1>
+    <button onclick="showPage('page2')" class="heart-button">💖</button>
+  </div>
+
+  <!-- Page 2 -->
+  <div id="page2" class="page">
+    <h1>🎉 Happy Birthday!🎉</h1>
+    <div class="cake">
+      <div class="tier top">
+        <div class="candle" id="candle1">
+          <div class="flame"></div>
+        </div>
+        <div class="candle" id="candle2">
+          <div class="flame"></div>
+        </div>
+      </div>
+      <div class="tier bottom"></div>
+    </div>
+    <button onclick="blowCandles()" class="heart-button">🕯 Blow Me 🕯</button>
+  </div>
+
+  <!-- Page 3 -->
+  <div id="page3" class="page">
+    <button onclick="showPage('page4')" class="heart-button">💌 A Special Note</button>
+  </div>
+
+  <!-- Page 4 -->
+  <div id="page4" class="page" style="flex-direction: column; align-items: center;">
+    <div class="note-container">
+      <div class="note">
+        <h2>Dear Rhea,</h2>
+        <p>Wishing you laughter, joy, and a year full of amazing moments. 🎈</p>
+        <p>You're one of a kind! Never forget how awesome you are.</p>
+        <p>With love,</p>
+        <p>ps: your bff</p>
+      </div>
+      <div class="note-photo">
+        <img src="fd.jpg"alt=" " />
+      </div>
+    </div>
+    <button onclick="showPage('page0')" class="heart-button">💖 Back to Start</button>
+  </div>
+<audio id="bgMusic" src="hbd piano.mp3" preload="auto"></audio>
+  <script src="b.js"></script>
+</body>
+</html>
