@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Surprise</title>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  
+  <div id="page0" class="page envelope-page">
+  <div class="envelope" onclick="openEnvelope()">
+    <div class="flap"></div>
+    <div class="letter">💌</div>
+  </div>
+</div>
+
+
+  <!-- Page 1 -->
+  <div id="page1" class="page" style="display: flex;">
+    <h1>🎉Surprise!🎉</h1>
+    <button onclick="showPage('page2')" class="heart-button">💖</button>
+  </div>
+
+  <!-- Page 2 -->
+  <div id="page2" class="page">
+    <h1>🎉 Happy Birthday Babygirl!🎉</h1>
+    <div class="cake">
+      <div class="tier top">
+        <div class="candle" id="candle1">
+          <div class="flame"></div>
+        </div>
+        <div class="candle" id="candle2">
+          <div class="flame"></div>
+        </div>
+      </div>
+      <div class="tier bottom"></div>
+    </div>
+    <button onclick="blowCandles()" class="heart-button">🕯 22 looks good on you! 🕯</button>
+  </div>
+
+  <!-- Page 3 -->
+  <div id="page3" class="page">
+    <button onclick="showPage('page4')" class="heart-button">💌 A Special Note</button>
+  </div>
+
+  <!-- Page 4 -->
+  <div id="page4" class="page" style="flex-direction: column; align-items: center;">
+    <div class="note-container">
+      <div class="note">
+        <h2><br>Happy Birthday</h2>
+        <p>Sofea! May Allah bless you, ease your journey for your upcoming exciting journey!🎈</p>
+        <p>Take care and I can't wait to see you soon! Missing you lots and all the best!</p>
+        <p>With love,</p>
+        <p>Daneena xoxo</p>
+      </div>
+      <div class="note-photo">
+        <img src="fd.jpg"alt=" " />
+      </div>
+    </div>
+    <button onclick="showPage('page0')" class="heart-button">💖 Back to Start</button>
+  </div>
+<audio id="bgMusic" src="hbd piano.mp3" preload="auto"></audio>
+  <script src="script.js"></script>
+</body>
+</html>
